@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="Abdulaziz">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog Craetion</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+    /* Additional styles specific to this HTML */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #759ab4;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .container {
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius:15px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        align-items:center;
+    }
+    .logo img {
+        max-width: 200px;
+        margin-bottom: 20px;
+    }
+    .search-bar {
+        width: 300px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+    }
+    .user-info {
+        text-align: center;
+        margin-bottom: 0px;
+        align-self: flex-start; /* Align to the left */
+        margin-left: 0px; /* Add some margin for spacing */
+        padding: 20px; /* Add padding to create a box */
+        border: 1.5px solid #000000; /* Add border */
+        border-radius: 10px; /* Add border radius */
+    }
+    .user-info p {
+        margin-bottom: 10px;
+    }
+    .logout-button {
+        background-color: #e22b2b;
+        color: #ffffff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+    .title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .text-area {
+        width: 400px;
+        height: 200px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        resize: none;
+        box-sizing: border-box;
+    }
+    .title-text-area{
+        width: 400px;
+        height: 30px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+    }
+    .post-button {
+        background-color: #a4f3c4;
+        color: #000000;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    .Erase-button
+    {
+        background-color: #e56e32;
+        color: #000000;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        margin-right: 10px;
+
+    }
+    .post-button:last-child {
+        margin-right: 0;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="user-info">
+            <img src="images/loginMs.png" alt="user photo" style="width: 30px;">
+            <div class="user-details">
+                <p><strong>User Name:</strong> Ms.Caywen</p>
+                <p><strong>Email:</strong> 2210004747@iau.edu.sa</p>
+                <p><strong>Company:</strong> IAU</p>
+            </div>
+            <button type="submit" class="logout-button">
+                <img src="images/Logout.png" alt="Logout" style="width: 16px ; height: 16px;">
+                <strong>Log out</strong>
+            </button>
+        </div>
+    </div>
+    <div style="padding: 20px;">
+
+    </div>
+
+    <div class="container">
+        <div class="logo">
+            <img src="images/Gray.png" alt="Logo">
+        </div>
+        <div class="title">Create & post blogs !!!</div>
+        <div>
+            <input class="search-bar" type="search" placeholder="Search...">
+            <button type="submit">
+                <img src="images/search.png" alt="Search" style="width: 16px; height: 16px;">
+            </button>
+        </div>
+        <div class="title">Title</div>
+        <textarea class="title-text-area" placeholder="Enter title here..." name="title"></textarea>
+        <div class="title">Blog Content</div>
+        <textarea class="text-area" placeholder="Enter blog content here..." name="content"></textarea>
+        <div>
+            <button class="post-button" type="submit">
+                <img src="images/Post.png" alt="post"style="width: 20px" />
+                Post
+            </button>
+            <button class="Erase-button" type="submit">
+                <img src="images/Erase.png" alt="post"style="width: 20px" />
+                Erase
+            </button>
+        </div>
+    </div>
